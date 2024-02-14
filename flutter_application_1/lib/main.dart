@@ -6,7 +6,6 @@ void main()
 {
   runApp(MyApp());
 }
-
 //CLASE QUE SE VA INSASTIAR
 class MyApp extends StatelessWidget 
 {
@@ -14,7 +13,7 @@ class MyApp extends StatelessWidget
   @override
   Widget build(BuildContext context) 
   {
-    return MaterialApp(home:Text('Hola Mundo') ,);// Crea un text widget
+    return MaterialApp(home:Center(child: Text('Hola Mundo')) ,);// Crea un text widget
   }
   
  
