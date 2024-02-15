@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/presentation/screens/Counter/counter_screen.dart';
+import 'package:flutter_application_1/presentation/screens/Counter/counter_functions_screen.dart';
 
 /*Toda aplicación de flutter tiene en su main
 una ejecución de widget inicial */
@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget
         useMaterial3: true,
         colorSchemeSeed: Colors.purple[100]
        ),
-        home: const CounterScreen()// Creación de una pantalla independiente
+        home: const CounterFunctionsScreen()// Creación de una pantalla independiente
     ); // Crea un text widget
   }
 }
