@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/presentation/screens/Counter/counter_screen.dart';
 
 /*Toda aplicación de flutter tiene en su main
 una ejecución de widget inicial */
 void main() 
 {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 //CLASE QUE SE VA INSASTIAR
@@ -20,8 +21,7 @@ class MyApp extends StatelessWidget
     return const MaterialApp // estamos diciendo que esto no va a cambiar
     (
        debugShowCheckedModeBanner: false,
-        home: Scaffold
-        (body: Center(child: Text('Hola Mundo')),)
+        home: CounterScreen()// Creación de una pantalla independiente
     ); // Crea un text widget
   }
 }
