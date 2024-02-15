@@ -18,10 +18,15 @@ class MyApp extends StatelessWidget
   @override
   Widget build(BuildContext context) 
   {
-    return const MaterialApp // estamos diciendo que esto no va a cambiar
+    return MaterialApp // estamos diciendo que esto no va a cambiar
     (
        debugShowCheckedModeBanner: false,
-        home: CounterScreen()// Creación de una pantalla independiente
+       theme: ThemeData
+       (
+        useMaterial3: true,
+        colorSchemeSeed: Colors.purple[100]
+       ),
+        home: const CounterScreen()// Creación de una pantalla independiente
     ); // Crea un text widget
   }
 }
